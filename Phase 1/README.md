@@ -11,8 +11,8 @@ This experiment examines the simple effects of Heteroscedasticity on OLS regress
 ## Experiment Design
 - For simplicity, the sample size is fixed at 35 and the level of contaminations is fixed at 10%.
 - For this phase, the experiment is divided into two cells:
-		- Mixtures cell: contains standard normal, outliers, mixture_u, mixture_k and mixture_ku
-		- Contaminations cell: contains contaminated_c, contaminated_e, contaminated_g, contaminated_t, contaminated_u
+	- Mixtures cell: contains standard normal, outliers, mixture_u, mixture_k and mixture_ku
+	- Contaminations cell: contains contaminated_c, contaminated_e, contaminated_g, contaminated_t, contaminated_u
 	
 ## Results Summary: KDE Analysis of Error Distributions and OLS Residuals
 - Contamination Level: 10%
@@ -20,33 +20,33 @@ This experiment examines the simple effects of Heteroscedasticity on OLS regress
 
 ### 1. Error Distribution Characteristics (Data Generating Process)
 ![error models distribution]("C:\Users\User\Desktop\Mr Ope\GrandMEAN_Portfolio\Research\DRO Simulations\Phase 1\plots\LSE_kde_10.0% Contaminations Sample Size =35.png" "Distribution Plot of error model")
-
 The KDE plots of the simulated errors reveal substantial departures from normality when mixture contamination is introduced
-	#### 1.1 Mixture Models
-		Key observations
-		Standard Normal Benchmark
-		•	Highly concentrated around zero.
-		•	Symmetric and sharply peaked density.
-		10% Outliers
-		•	Retains central concentration but shows moderate tail inflation.
-		•	Slight widening of the density relative to the benchmark.
-		10% Mixture_k
-		•	Displays heavy tails with noticeable probability mass far from the center.
-		•	Evidence of left-tail contamination (extreme negative values).
-		10% Mixture_u
-		•	Exhibits clear multimodality, including a secondary density peak around large positive values.
-		•	Indicates structured contamination rather than random noise.
-		10% Mixture_ku
-		•	Combines both heavy tails and dispersion.
-		•	Shows extreme right-tail expansion, reaching values near 20.
+	
+#### 1.1 Mixture Models
+Key observations
+-	Standard Normal Benchmark
+	•	Highly concentrated around zero.
+	•	Symmetric and sharply peaked density.
+- 10% Outliers
+	•	Retains central concentration but shows moderate tail inflation.
+	•	Slight widening of the density relative to the benchmark.
+- 10% Mixture_k
+	•	Displays heavy tails with noticeable probability mass far from the center.
+	•	Evidence of left-tail contamination (extreme negative values).
+- 10% Mixture_u
+	•	Exhibits clear multimodality, including a secondary density peak around large positive values.
+	•	Indicates structured contamination rather than random noise.
+- 10% Mixture_ku
+	•	Combines both heavy tails and dispersion.
+	•	Shows extreme right-tail expansion, reaching values near 20.
 		
-		Mixture models produce highly non-Gaussian error structures, characterized by:
-		•	Tail inflation
-		•	Secondary modes
-		•	Extreme outliers
-		These features violate the classical OLS assumptions of normality and homoscedasticity.
+Mixture models produce highly non-Gaussian error structures, characterized by:
+	•	Tail inflation
+	•	Secondary modes
+	•	Extreme outliers
+	These features violate the classical OLS assumptions of normality and homoscedasticity.
 
-	#### 1.2 Contamination Models
+#### 1.2 Contamination Models
 		Compared to mixture models, contamination models display more controlled deviations from normality.
 		
 		Key observations:
