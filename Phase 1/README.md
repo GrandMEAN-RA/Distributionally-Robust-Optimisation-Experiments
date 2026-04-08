@@ -47,69 +47,66 @@ Mixture models produce highly non-Gaussian error structures, characterized by:
 	These features violate the classical OLS assumptions of normality and homoscedasticity.
 
 #### 1.2 Contamination Models
-		Compared to mixture models, contamination models display more controlled deviations from normality.
+Compared to mixture models, contamination models display more controlled deviations from normality.
+
+Key observations:
+- 10% Contaminated_g
+	•	Noticeable variance inflation with wider spread.
+	•	Retains unimodal structure but with heavier tails.
+- 10% Contaminated_t
+	•	Very close to the normal distribution in the central region.
+	•	Slightly heavier tails due to the t-distribution component.
+- 10% Contaminated_u
+	•	Displays extreme negative outliers (long left tail).
+	•	Central density remains sharp.
+- 10% Contaminated_e
+	•	Shows moderate skewness and broader dispersion.
+- 10% Contaminated_c
+	•	Produces strong left-tail contamination, with isolated extreme values.
 		
-		Key observations:
-		10% Contaminated_g
-		•	Noticeable variance inflation with wider spread.
-		•	Retains unimodal structure but with heavier tails.
-		10% Contaminated_t
-		•	Very close to the normal distribution in the central region.
-		•	Slightly heavier tails due to the t-distribution component.
-		10% Contaminated_u
-		•	Displays extreme negative outliers (long left tail).
-		•	Central density remains sharp.
-		10% Contaminated_e
-		•	Shows moderate skewness and broader dispersion.
-		10% Contaminated_c
-		•	Produces strong left-tail contamination, with isolated extreme values.
-		
-		Contamination models tend to generate:
-		•	Unimodal but heavy-tailed distributions
-		•	More localized deviations from Gaussian assumptions
-		•	Less structural distortion than mixture models.
+Contamination models tend to generate:
+	•	Unimodal but heavy-tailed distributions
+	•	More localized deviations from Gaussian assumptions
+	•	Less structural distortion than mixture models.
 
 ### 2. Residual Distribution After OLS Estimation
 ![error models distribution]("C:\Users\User\Desktop\Mr Ope\GrandMEAN_Portfolio\Research\DRO Simulations\Phase 1\plots\LSE_Residuals_kdeplot10.0% Contaminations Sample Size =35.png" "Distribution Plot of error model")
 The second set of KDE plots shows the OLS residual distributions. This provides insight into how well OLS absorbs or propagates contamination.
-	#### 2.1 Residuals Under Mixture Models
+#### 2.1 Residuals Under Mixture Models
 		
-		Key observations
-		Central Peak Reduction: Compared to the benchmark, most contaminated cases display:
-		•	Lower central density
-		•	Increased spread
-		This indicates variance inflation in residuals.
+Key observations
+- Central Peak Reduction: Compared to the benchmark, most contaminated cases display:
+	•	Lower central density
+	•	Increased spread
+	This indicates variance inflation in residuals.
 		
-		Persistence of Extreme Values
-		•	Mixture_u retains a visible secondary density peak near large positive residuals.
-		•	Mixture_k preserves extreme negative residuals.
+- Persistence of Extreme Values
+	•	Mixture_u retains a visible secondary density peak near large positive residuals.
+	•	Mixture_k preserves extreme negative residuals.
 		
-		Partial Absorption
-		•	OLS estimation partially compresses extreme tails, but does not eliminate them.
-		
-		OLS is not robust to mixture contamination. Structural features of the error distribution persist in the residuals.
+- Partial Absorption
+	•	OLS estimation partially compresses extreme tails, but does not eliminate them.
+OLS is not robust to mixture contamination. Structural features of the error distribution persist in the residuals.
 
-	#### 2.2 Residuals Under Contamination Models
-		Residual KDEs show a different pattern.
-		
-		Key features:
-		Contaminated_t and Contaminated_u
-		•	Residual distributions remain very close to normal near the center.
-		•	Only mild tail deviations remain.
-		Contaminated_g
-		•	Residuals display moderate dispersion but retain symmetry.
-		Contaminated_e
-		•	Slight skewness remains visible.
-		Contaminated_c
-		•	Extreme negative residuals persist but are attenuated relative to the original errors.
-		
-		OLS shows greater resilience to contamination models than to mixture models.
-		This suggests that:
-		•	Isolated contamination is partially absorbed during estimation.
-		•	Structured mixture contamination propagates more strongly into residuals.
+#### 2.2 Residuals Under Contamination Models
+Residual KDEs show a different pattern.
+Key features:
+- Contaminated_t and Contaminated_u
+	•	Residual distributions remain very close to normal near the center.
+	•	Only mild tail deviations remain.
+- Contaminated_g
+	•	Residuals display moderate dispersion but retain symmetry.
+- Contaminated_e
+	•	Slight skewness remains visible.
+- Contaminated_c
+	•	Extreme negative residuals persist but are attenuated relative to the original errors.
+OLS shows greater resilience to contamination models than to mixture models.
+This suggests that:
+	•	Isolated contamination is partially absorbed during estimation.
+	•	Structured mixture contamination propagates more strongly into residuals.
 
 ### 3. Comparative Insights
-	#### 3.1 Results Table
+#### 3.1 Results Table
 	
 	| models           | alpha       | beta        | bias       | variance    | MSE         | RMSE (%)      | contamination level | sample Size |
 	| ---------------- | ----------- | ----------- | ---------- | ----------- | ----------- | ------------- | ------------------- | ----------- |
@@ -124,7 +121,8 @@ The second set of KDE plots shows the OLS residual distributions. This provides 
 	| Mixtures_K       | 2.907183472 | 2.030205072 | \-2.09E-14 | 13.75784122 | 13.75784122 | \-1531.321751 | 10.00%              | 35          |
 	| Mixtures_KU      | 6.260470682 | 1.990702609 | \-1.20E-14 | 14.53721271 | 14.53721271 | \-1623.734918 | 10.00%              | 35          |
 
-	#### 3.2 Behaviorual Summary
+#### 3.2 Behaviorual Summary
+
 	| Property	| Mixture Models | Contamination Models |
 	------------ --------------- -----------------
 	| Tail behavior	| Very heavy	| Moderate |
@@ -135,7 +133,7 @@ The second set of KDE plots shows the OLS residual distributions. This provides 
 	------------ --------------- -----------------
 	| OLS robustness |	Low	| Moderate|
 	
-	**Overall:**
+**Overall:**
 	•	Mixture contamination introduces structural distortions that OLS cannot adequately absorb.
 	•	Contamination models mainly produce variance inflation, which OLS handles more effectively.
 
