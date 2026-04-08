@@ -19,7 +19,8 @@ This experiment examines the simple effects of Heteroscedasticity on OLS regress
 - Sample Size: (n = 35)
 
 ### 1. Error Distribution Characteristics (Data Generating Process)
-![error models distribution]("C:\Users\User\Desktop\Mr Ope\GrandMEAN_Portfolio\Research\DRO Simulations\Phase 1\plots\LSE_kde_10.0% Contaminations Sample Size =35.png" "Distribution Plot of error model")
+<img width="1200" height="400" alt="image" src="https://github.com/user-attachments/assets/a8d49c57-28ac-4305-8cc3-3ee72d6d10b9" />
+
 The KDE plots of the simulated errors reveal substantial departures from normality when mixture contamination is introduced
 	
 #### 1.1 Mixture Models
