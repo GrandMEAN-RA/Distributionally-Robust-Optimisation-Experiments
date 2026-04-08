@@ -76,8 +76,9 @@ In summary, this experiment provides vital evidence for when OLS is reliable in 
 		- The IQR is calculated for the standard normal errors.
 	
 ## Summary of Findings
-Under 10% contamination and small sample size (n=35):
-•	Mixture contamination produces severe departures from Gaussian assumptions, leading to persistent distortions in OLS residuals.
-•	Contamination models produce milder deviations, with OLS residuals remaining approximately symmetric and unimodal.
-•	The experiment demonstrates that the structural form of contamination matters as much as the contamination level itself.
-This highlights the need for robust statistical frameworks when modelling data subject to distributional shift or adversarial contamination.
+**Phase 1:**
+	Under 10% contamination and small sample size (n=35):
+	•	Mixture contamination produces severe departures from Gaussian assumptions, leading to persistent distortions in OLS residuals.
+	•	Contamination models produce milder deviations, with OLS residuals remaining approximately symmetric and unimodal.
+	•	The experiment demonstrates that the structural form of contamination matters as much as the contamination level itself.
+	This highlights the need for robust statistical frameworks when modelling data subject to distributional shift or adversarial contamination.
