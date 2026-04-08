@@ -77,5 +77,9 @@ In summary, this experiment provides vital evidence for when OLS is reliable in 
 	
 ## Summary of Findings
 **Phase 1:**
-	- Mixture of Normals: The regression coefficients remain unbiased, but standard errors are wrong (necessitating heteroscedasticity-consistent standard errors).
-	- Normal + Non-Normal: Significant bias in coefficients, particularly if the non-normal component is heavy-tailed. 
+
+	Under 10% contamination and small sample size (n=35):
+	- Mixture contamination produces severe departures from Gaussian assumptions, leading to persistent distortions in OLS residuals.
+	- Contamination models produce milder deviations, with OLS residuals remaining approximately symmetric and unimodal.
+	- The experiment demonstrates that the structural form of contamination matters as much as the contamination level itself.
+	This highlights the need for robust statistical frameworks when modelling data subject to distributional shift or adversarial contamination.
