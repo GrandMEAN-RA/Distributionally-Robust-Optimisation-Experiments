@@ -124,15 +124,15 @@ This suggests that:
 
 #### 3.2 Behaviorual Summary
 
-	| Property	| Mixture Models | Contamination Models |
-	 ----------   --------------  --------------------
-	| Tail behavior	| Very heavy	| Moderate |
-	 --------------  -------------   ----------
-	| Multimodality	| Present	| Absent |
-	 --------------  ----------- --------
-	| Residual distortion |	Strong | Mild |
-	 --------------------- -------- ------
-	| OLS robustness |	Low	| Moderate|
+	| Property	          | Mixture Models | Contamination Models |
+	| ----------          | -------------- | -------------------- |
+	| Tail behavior	      | Very heavy	   | Moderate             |
+	| --------------      |-------------   | ----------           |
+	| Multimodality	      | Present	       | Absent               |
+	| --------------      |-----------     |--------              |
+	| Residual distortion |	Strong         | Mild                 |
+	| --------------------| --------       |------                |
+	| OLS robustness      |	Low	           | Moderate             |
 	
 **Overall:**
 - Mixture contamination introduces structural distortions that OLS cannot adequately absorb.
