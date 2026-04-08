@@ -71,7 +71,8 @@ Contamination models tend to generate:
 - Less structural distortion than mixture models.
 
 ### 2. Residual Distribution After OLS Estimation
-![error models distribution]("C:\Users\User\Desktop\Mr Ope\GrandMEAN_Portfolio\Research\DRO Simulations\Phase 1\plots\LSE_Residuals_kdeplot10.0% Contaminations Sample Size =35.png" "Distribution Plot of error model")
+<img width="1200" height="400" alt="image" src="https://github.com/user-attachments/assets/404b3fd9-d9a3-4883-ba27-cacd4a9ee379" />
+
 
 The second set of KDE plots shows the OLS residual distributions. This provides insight into how well OLS absorbs or propagates contamination.
 #### 2.1 Residuals Under Mixture Models
