@@ -142,6 +142,7 @@ This suggests that:
 - Contamination models mainly produce variance inflation, which OLS handles more effectively.
 
 ### 4. Key Experimental Implications
+<img width="1200" height="400" alt="image" src="https://github.com/user-attachments/assets/dc721dc2-ec5b-4052-9fe5-234932b2136f" />
 - Sensitivity of OLS
 	OLS estimators are highly sensitive to mixture-based contamination, especially when it introduces secondary modes or extreme outliers.
 - Residual Diagnostics
