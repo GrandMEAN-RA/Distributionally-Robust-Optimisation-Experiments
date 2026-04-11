@@ -110,6 +110,7 @@ This suggests that:
 
 ### 3. Comparative Insights
 #### 3.1 Results Table
+<img width="1200" height="400" alt="image" src="https://github.com/user-attachments/assets/2982fb5b-40f1-4318-85d7-76e72b8726f2" />
 	
 	| models           | alpha       | beta        | bias       | variance    | MSE         | RMSE (%)      | contamination level | sample Size |
 	| ---------------- | ----------- | ----------- | ---------- | ----------- | ----------- | ------------- | ------------------- | ----------- |
