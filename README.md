@@ -74,12 +74,18 @@ In summary, this experiment provides vital evidence for when OLS is reliable in 
 		- X is a uniform r.v, thus contaminating the error term with U(0,1) is only used as a control for the contaminations cell of the experiment.
 		- Outliers were generated as uniform random variates that are between -2 and 1.5-iqr below lower quartile or 1.5-iqr above upper quartile and 2.
 		- The IQR is calculated for the standard normal errors.
-	
+		
+## Evaluation
+Model performance is assessed by:
+- Bias
+- Variance
+- Mean Squared Error (MSE)
+- Relative Mean Squared Error (RMSE - relative to benchmark)
+
 ## Summary of Findings
 **Phase 1:**
-
-	Under 10% contamination and small sample size (n=35):
-	- Mixture contamination produces severe departures from Gaussian assumptions, leading to persistent distortions in OLS residuals.
-	- Contamination models produce milder deviations, with OLS residuals remaining approximately symmetric and unimodal.
-	- The experiment demonstrates that the structural form of contamination matters as much as the contamination level itself.
-	This highlights the need for robust statistical frameworks when modelling data subject to distributional shift or adversarial contamination.
+Under 10% contamination and small sample size (n=35):
+- Mixture contamination produces severe departures from Gaussian assumptions, leading to persistent distortions in OLS residuals.
+- Contamination models produce milder deviations, with OLS residuals remaining approximately symmetric and unimodal.
+- The experiment demonstrates that the structural form of contamination matters as much as the contamination level itself.
+This highlights the need for robust statistical frameworks when modelling data subject to distributional shift or adversarial contamination.

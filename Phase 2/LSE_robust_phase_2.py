@@ -21,7 +21,7 @@ random.seed(42)
 
 # Define simulation parameters and initialize residuals dictionary
 ssize = 35
-pct_outliers = [0.1]
+pct_outliers = [0.05, 0.1, 0.2, 0.3, 0.5]
 res_plots_met_mix = []
 res_plots_met_cont = []
 res_plots_par_mix = []
@@ -84,8 +84,8 @@ for pct in pct_outliers:
     outliers[-n_outliers:] = extreme_val
 
     #Visualize error models
-    errors_mix = {'Standard Normal':stn_errors,'10% outliers':outliers,'10% Mixture_k':mixtures_k,'10% Mixture_u':mixtures_u,'10% Mixture_ku':mixtures_ku}
-    errors_cont = {'Standard Normal':stn_errors,'10% Contaminated_g':contaminations_g,'10% Contaminated_t':contaminations_t,'10% Contaminated_u':contaminations_u,'10% Contaminated_e':contaminations_e,'10% Contaminated_c':contaminations_c}
+    errors_mix = {'Standard Normal':stn_errors,f'{pct*100}% outliers':outliers,f'{pct*100}% Mixture_k':mixtures_k,f'{pct*100}% Mixture_u':mixtures_u,f'{pct*100}% Mixture_ku':mixtures_ku}
+    errors_cont = {'Standard Normal':stn_errors,f'{pct*100}% Contaminated_g':contaminations_g,f'{pct*100}% Contaminated_t':contaminations_t,f'{pct*100}% Contaminated_u':contaminations_u,f'{pct*100}% Contaminated_e':contaminations_e,f'{pct*100}% Contaminated_c':contaminations_c}
     models_mix = pd.DataFrame(errors_mix)
     models_cont = pd.DataFrame(errors_cont)
 
@@ -315,18 +315,18 @@ model_class_met = [res_plot_met_mix, res_plot_met_cont]
 fig, ax4 = plt.subplots(1,len(model_class_met), figsize=(12, 4)) 
 for i, mod in enumerate(model_class_met):
     t_mod = 'Mixtures' if i == 0 else 'Contaminations'
-    sns.pointplot(x="contamination level", y="bias", data=mod, hue='models', ax=ax4[i])
-    ax4[i].set_title(f'Bias for {pct*100}% {t_mod}- Sample size: {ssize}')
+    sns.pointplot(x="contamination level", y="bias", data=mod, hue='models', ax=ax4[i], order=['5.0%','10.0%','20.0%','30.0%','50.0%'], linestyle="none")
+    ax4[i].set_title(f'Bias for {t_mod}- Sample size: {ssize}')
 plt.tight_layout()
-fig.savefig(f'{plots_file_path}/LSE_Bias_{pct * 100:.1f}% Sample Size ={ssize}.png')
+fig.savefig(f'{plots_file_path}/LSE_Bias Sample Size ={ssize}.png')
 plt.show()
 
 #Visualize RMSE
 fig, ax4 = plt.subplots(1,len(model_class_met), figsize=(12, 4)) 
 for i, mod in enumerate(model_class_met):
     t_mod = 'Mixtures' if i == 0 else 'Contaminations'
-    sns.pointplot(x="contamination level", y="RMSE (%)", data=mod, hue='models', ax=ax4[i])
-    ax4[i].set_title(f'RMSE for {pct*100}% {t_mod}- Sample size: {ssize}')
+    sns.pointplot(x="contamination level", y="RMSE (%)", data=mod, hue='models', ax=ax4[i], order=['5.0%','10.0%','20.0%','30.0%','50.0%'], linestyle="none")
+    ax4[i].set_title(f'RMSE for {t_mod}- Sample size: {ssize}')
 plt.tight_layout()
-fig.savefig(f'{plots_file_path}/LSE_RMSE_{pct * 100:.1f}% Sample Size ={ssize}.png')
+fig.savefig(f'{plots_file_path}/LSE_RMSE_Sample Size ={ssize}.png')
 plt.show()
