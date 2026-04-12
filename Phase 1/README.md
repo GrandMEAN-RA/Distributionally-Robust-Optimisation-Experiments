@@ -19,7 +19,8 @@ This experiment examines the simple effects of Heteroscedasticity on OLS regress
 - Sample Size: (n = 35)
 
 ### 1. Error Distribution Characteristics (Data Generating Process)
-![error models distribution]("C:\Users\User\Desktop\Mr Ope\GrandMEAN_Portfolio\Research\DRO Simulations\Phase 1\plots\LSE_kde_10.0% Contaminations Sample Size =35.png" "Distribution Plot of error model")
+<img width="1200" height="400" alt="image" src="https://github.com/user-attachments/assets/a8d49c57-28ac-4305-8cc3-3ee72d6d10b9" />
+
 The KDE plots of the simulated errors reveal substantial departures from normality when mixture contamination is introduced
 	
 #### 1.1 Mixture Models
@@ -70,7 +71,8 @@ Contamination models tend to generate:
 - Less structural distortion than mixture models.
 
 ### 2. Residual Distribution After OLS Estimation
-![error models distribution]("C:\Users\User\Desktop\Mr Ope\GrandMEAN_Portfolio\Research\DRO Simulations\Phase 1\plots\LSE_Residuals_kdeplot10.0% Contaminations Sample Size =35.png" "Distribution Plot of error model")
+<img width="1200" height="400" alt="image" src="https://github.com/user-attachments/assets/404b3fd9-d9a3-4883-ba27-cacd4a9ee379" />
+
 
 The second set of KDE plots shows the OLS residual distributions. This provides insight into how well OLS absorbs or propagates contamination.
 #### 2.1 Residuals Under Mixture Models
@@ -108,6 +110,7 @@ This suggests that:
 
 ### 3. Comparative Insights
 #### 3.1 Results Table
+<img width="1200" height="400" alt="image" src="https://github.com/user-attachments/assets/2982fb5b-40f1-4318-85d7-76e72b8726f2" />
 	
 	| models           | alpha       | beta        | bias       | variance    | MSE         | RMSE (%)      | contamination level | sample Size |
 	| ---------------- | ----------- | ----------- | ---------- | ----------- | ----------- | ------------- | ------------------- | ----------- |
@@ -139,6 +142,7 @@ This suggests that:
 - Contamination models mainly produce variance inflation, which OLS handles more effectively.
 
 ### 4. Key Experimental Implications
+<img width="1200" height="400" alt="image" src="https://github.com/user-attachments/assets/dc721dc2-ec5b-4052-9fe5-234932b2136f" />
 - Sensitivity of OLS
 	OLS estimators are highly sensitive to mixture-based contamination, especially when it introduces secondary modes or extreme outliers.
 - Residual Diagnostics
