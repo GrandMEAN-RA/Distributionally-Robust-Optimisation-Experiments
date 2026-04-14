@@ -14,10 +14,11 @@ This phase is built on phase 1 to examine the combined effects of heteroscedasti
 - Sample Size: (n = 35)
 
 ### 1. Error Distribution Characteristics (Data Generating Process)
-![error models distribution]("C:\Users\User\Desktop\Mr Ope\GrandMEAN_Portfolio\Research\DRO Simulations\Phase 1\plots\LSE_kde_10.0% Contaminations Sample Size =35.png" "Distribution Plot of error model")
 The KDE plots of the simulated errors reveal substantial departures from normality when mixture contamination is introduced
 	
 #### 1.1 Low Contamination Regime (5%)
+<img width="1200" height="400" alt="image" src="https://github.com/user-attachments/assets/12efe115-8c04-437a-a6da-37e6c2f556a8" />
+
 At 5% contamination, the KDE curves for most models remain close to the standard normal benchmark.
 
 ##### Mixture models
