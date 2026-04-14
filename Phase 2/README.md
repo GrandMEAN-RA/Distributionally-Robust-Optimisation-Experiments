@@ -84,8 +84,6 @@ This regime effectively represents distributional breakdown, where the original 
 contaminations preserve the core generating distribution, even when a large fraction of observations are perturbed.
 
 ### 2. Residual Distribution After OLS Estimation
-![error models distribution]("C:\Users\User\Desktop\Mr Ope\GrandMEAN_Portfolio\Research\DRO Simulations\Phase 1\plots\LSE_Residuals_kdeplot10.0% 
-Contaminations Sample Size =35.png" "Distribution Plot of error model")
 Under correct model specification and classical assumptions, OLS residuals should approximate: ê_i ~ N(0,var). Thus, deviations in the KDE of residuals from 
 normality directly indicate:
 - model misspecification
@@ -93,6 +91,8 @@ normality directly indicate:
 - failure of OLS robustness
 
 #### 2.1 Low Contamination (5%) 
+<img width="1200" height="400" alt="image" src="https://github.com/user-attachments/assets/5f638207-7d99-498c-aa4f-4685b739167f" />
+
 Near-Recovery with Early Instability
 
 ##### Mixture Models
