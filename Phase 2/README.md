@@ -59,6 +59,8 @@ These results indicate that mixture models translate moderate contamination into
 such as OLS. Contamination mechanisms, on the other hand, affect tail behavior more than central density, producing asymmetric uncertainty.
 		
 #### 1.3. High Contamination Regime (50%)
+<img width="1200" height="400" alt="image" src="https://github.com/user-attachments/assets/d1c6f3c3-22bf-4428-8b28-b34f0cab48fc" />
+
 At 50% contamination, the distributions diverge dramatically from the standard normal baseline.
 
 ##### Mixture models
