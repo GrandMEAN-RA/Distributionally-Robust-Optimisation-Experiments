@@ -36,6 +36,8 @@ Overall, under low contamination, mixture models preserve the location and gener
 At this level, contamination produces localized perturbations rather than structural changes in the distribution.
 
 #### 1.2. Moderate Contamination Regime (20%)
+<img width="1200" height="400" alt="image" src="https://github.com/user-attachments/assets/38f40e2a-93ba-486d-ac4e-e1daf79a6e5d" />
+
 When contamination rises to 20%, the distortion becomes structurally visible.
 
 ##### Mixture models
