@@ -113,6 +113,8 @@ At 5% contamination, OLS partially absorbs contamination into parameter estimate
 - Contamination impact is subcritical
 
 #### 2.2. Moderate Contamination (20%)
+<img width="1200" height="400" alt="image" src="https://github.com/user-attachments/assets/c1d51fa4-e01b-4eef-adfc-6fbd4a279793" />
+
 Breakdown of Gaussian Residual Structure
 
 ##### Mixture Models
