@@ -232,6 +232,8 @@ The kde plots empirically validate this:
 These results highlight important consequences for estimation and decision systems.
 
 #### Sensitivity of classical estimators
+<img width="1200" height="400" alt="image" src="https://github.com/user-attachments/assets/bb1786e3-03a3-430e-b825-d7514b392368" />
+
 Estimators assuming Gaussian errors (e.g., OLS) will experience:
 - variance inflation
 - bias under skew contamination
