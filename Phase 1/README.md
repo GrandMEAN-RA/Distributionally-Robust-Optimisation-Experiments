@@ -1,12 +1,11 @@
 # Distributionally Robust Optimisation Simulation Experiments - Phase 1
-This phase of the experiment investigates the **robustness** of Ordinary Least Square regression for the simple linear case under varying Heteroscedastic 
+This phase of the experiment investigates the **robustness** of Ordinary Least Square regression for the simple linear case under varying heteroscedastic 
 conditions
 
 ## Backgrounds to the Experiment
 One of the key assumptions of Ordinary Least Squares (OLS) regression is homoscedasticity (constant error variance). This means that The error terms have 
-a constant variance (Var(e)=sigma-squared) across all levels of independent variables. The violated of this assumption can invalidates standard errors, 
-making hypothesis tests unreliable.
-This experiment examines the simple effects of Heteroscedasticity on OLS regression 
+a constant variance (Var(e)=sigma-squared) across all levels of independent variables. The violation of this assumption invalidates standard errors, 
+making hypothesis tests unreliable. This phase of the experiment examines the simple effects of heteroscedasticity on OLS regression. 
 
 ## Experiment Design
 - For simplicity, the sample size is fixed at 35 and the level of contaminations is fixed at 10%.
