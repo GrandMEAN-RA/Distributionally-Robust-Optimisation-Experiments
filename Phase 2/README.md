@@ -140,6 +140,8 @@ Clear deviations emerge:
 	- loss of Gaussianity
 
 #### 2.3. Severe Contamination (50%)
+<img width="1200" height="400" alt="image" src="https://github.com/user-attachments/assets/951d248e-a3df-4426-8801-e7d423f6dd00" />
+
 Complete Residual Distortion
 
 ##### Mixture Models
